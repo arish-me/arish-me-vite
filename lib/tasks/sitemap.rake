@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # lib/tasks/sitemap.rake
 namespace :sitemap do
   desc 'Generate sitemap.xml'
