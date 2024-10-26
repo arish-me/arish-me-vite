@@ -22,9 +22,9 @@ const HelmetWrapper: React.FC<HelmetWrapperProps> = ({
   description = SITE_DESCRIPTION,
   defaultTitle = SITE_DESCRIPTION,
   url = window.location.href,
-  image = 'http://localhost:3000/assets/arishme.png',
   type = 'website'
 }) => {
+  const image = `${process.env.APP_URL}/arishme.png`;
   return (
     <Helmet>
       {showDefault ? (
