@@ -2,6 +2,12 @@
 
 This is a portfolio website built using **Ruby on Rails**, **React**, **Vite-Rails**, and **ShadCN UI**. The application uses **PostgreSQL** as the database and **Ruby 3.2.2** as the runtime. This README provides an overview of the setup, configuration, and running of the application.
 
+
+<img width="1776" alt="image" src="https://github.com/user-attachments/assets/40aaefae-e4f1-454d-a57f-0ccfd811a3d7">
+
+
+
+
 ## Requirements
 
 - **Ruby version**: 3.2.2
