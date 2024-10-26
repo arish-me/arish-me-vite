@@ -4,6 +4,7 @@ import { defineConfig } from 'vite';
 import FullReload from 'vite-plugin-full-reload';
 import RubyPlugin from 'vite-plugin-ruby';
 import tsconfigPaths from 'vite-tsconfig-paths';
+import EnvironmentPlugin from 'vite-plugin-environment'
 import path from 'path';
 
 export default defineConfig({
@@ -11,11 +12,15 @@ export default defineConfig({
     react(),
     RubyPlugin(),
     FullReload(['config/routes.rb', 'app/views/**/*'], { delay: 200 }),
-    // tsconfigPaths(),
+    tsconfigPaths(),
+    EnvironmentPlugin('all'),
   ],
-  // In order to import from our frontend files using relative imports,
-  // we need to alias any top level folders
-  // https://vite-ruby.netlify.app/config/index.html#watchadditionalpaths
+
+   define: {
+    'process.env.PRODUCT_HUNT_API': JSON.stringify(process.env.PRODUCT_HUNT_API),
+    'process.env.DEBUG': JSON.stringify(process.env.DEBUG),
+    },
+
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'app/frontend/src'),
