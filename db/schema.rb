@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 20_241_020_045_508) do
+ActiveRecord::Schema[7.1].define(version: 20_241_026_183_950) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
 
@@ -62,6 +62,21 @@ ActiveRecord::Schema[7.1].define(version: 20_241_020_045_508) do
     t.index %w[blob_id variation_digest], name: 'index_active_storage_variant_records_uniqueness', unique: true
   end
 
+  create_table 'products', id: :uuid, default: -> { 'gen_random_uuid()' }, force: :cascade do |t|
+    t.string 'name'
+    t.string 'tagline'
+    t.text 'description'
+    t.integer 'comments_count'
+    t.integer 'votes_count'
+    t.string 'url'
+    t.string 'website'
+    t.datetime 'featured_at'
+    t.string 'thumbnail_url'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.string 'node_id'
+  end
+
   create_table 'project_technologies', id: :uuid, default: -> { 'gen_random_uuid()' }, force: :cascade do |t|
     t.uuid 'project_id', null: false
     t.uuid 'technology_id', null: false
@@ -88,6 +103,15 @@ ActiveRecord::Schema[7.1].define(version: 20_241_020_045_508) do
     t.datetime 'updated_at', null: false
   end
 
+  create_table 'topics', id: :uuid, default: -> { 'gen_random_uuid()' }, force: :cascade do |t|
+    t.string 'name'
+    t.text 'description'
+    t.uuid 'product_id', null: false
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.index ['product_id'], name: 'index_topics_on_product_id'
+  end
+
   create_table 'users', force: :cascade do |t|
     t.string 'email', default: '', null: false
     t.string 'encrypted_password', default: '', null: false
@@ -105,4 +129,5 @@ ActiveRecord::Schema[7.1].define(version: 20_241_020_045_508) do
   add_foreign_key 'active_storage_variant_records', 'active_storage_blobs', column: 'blob_id'
   add_foreign_key 'project_technologies', 'projects'
   add_foreign_key 'project_technologies', 'technologies'
+  add_foreign_key 'topics', 'products'
 end
