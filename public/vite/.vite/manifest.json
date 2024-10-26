@@ -1,0 +1,64 @@
+{
+  "../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf": {
+    "file": "assets/fa-solid-900-BV3CbEM2.ttf",
+    "src": "../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf"
+  },
+  "../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2": {
+    "file": "assets/fa-solid-900-DOQJEhcS.woff2",
+    "src": "../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"
+  },
+  "../../node_modules/@rails/actioncable/src/index.js": {
+    "file": "assets/index-D0Td30rp.js",
+    "name": "index",
+    "src": "../../node_modules/@rails/actioncable/src/index.js",
+    "isDynamicEntry": true
+  },
+  "__commonjsHelpers-Cpj98o6Y.js": {
+    "file": "assets/_commonjsHelpers-Cpj98o6Y.js",
+    "name": "_commonjsHelpers"
+  },
+  "entrypoints/application.css": {
+    "file": "assets/application-l0sNRNKZ.js",
+    "name": "entrypoints/application.css",
+    "src": "entrypoints/application.css",
+    "isEntry": true
+  },
+  "entrypoints/application.tsx": {
+    "file": "assets/application-BaQVZ4Rt.js",
+    "name": "entrypoints/application.tsx",
+    "src": "entrypoints/application.tsx",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers-Cpj98o6Y.js"
+    ],
+    "css": [
+      "assets/application-CJ-P_IQU.css"
+    ],
+    "assets": [
+      "assets/arishme-CSkTL564.png"
+    ]
+  },
+  "entrypoints/rails_admin.js": {
+    "file": "assets/rails_admin-zIjbEWGN.js",
+    "name": "entrypoints/rails_admin.js",
+    "src": "entrypoints/rails_admin.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers-Cpj98o6Y.js"
+    ],
+    "dynamicImports": [
+      "../../node_modules/@rails/actioncable/src/index.js"
+    ],
+    "css": [
+      "assets/rails_admin-Ji1kP0ED.css"
+    ],
+    "assets": [
+      "assets/fa-solid-900-DOQJEhcS.woff2",
+      "assets/fa-solid-900-BV3CbEM2.ttf"
+    ]
+  },
+  "src/images/arishme.png": {
+    "file": "assets/arishme-CSkTL564.png",
+    "src": "src/images/arishme.png"
+  }
+}
