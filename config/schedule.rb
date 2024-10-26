@@ -25,9 +25,9 @@ every 1.day, at: '4:30 am' do
 end
 
 every 1.day, at: '5:00 am' do
-  runner 'SyncSiteMapJob.perform_later'
+#  runner 'SyncSiteMapJob.perform_later'
 end
 
 every 1.minute do
-  runner 'SyncProductsJob.perform_later'
+#  runner 'SyncProductsJob.perform_later'
 end
