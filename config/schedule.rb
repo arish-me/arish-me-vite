@@ -18,6 +18,10 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
-every 1.minute, at: '*/30' do
+every 1.day, at: '4:30 am' do
+  runner "SyncProductsJob.perform_later"
+end
+
+every 1.minute do
   runner "SyncProductsJob.perform_later"
 end
