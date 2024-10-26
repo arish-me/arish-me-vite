@@ -1,0 +1,13 @@
+# frozen_string_literal: true
+
+# app/validators/content_type_validator.rb
+class ContentTypeValidator < ActiveModel::EachValidator
+  def validate_each(record, attribute, value)
+    return unless value.attached?
+
+    content_types = Array(options[:in])
+    return unless content_types.exclude?(value.content_type)
+
+    record.errors.add(attribute, :content_type_invalid)
+  end
+end

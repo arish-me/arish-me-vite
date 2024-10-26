@@ -1,9 +1,23 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+# frozen_string_literal: true
+
+User.create(email: 'admin@arish.me', password: 'AAaa786@', password_confirmation: 'AAaa786@', role: 'admin')
+
+resume_html = '<div><strong>Arish Khan</strong><br><strong>Experience:</strong> 8+ Years<br><strong>Email:</strong> <a href="mailto:thermic.arish@gmail.com">thermic.arish@gmail.com</a><br><strong>Phone:</strong> +91-9806980618<br><br></div><div><strong>SENIOR SOFTWARE ENGINEER<br></strong><br></div><div>I am a Senior Software Engineer with over 8 years of experience in web development, specializing in Ruby on Rails. I have built, scaled, and maintained products in various sectors including procurement software, CRM, data analysis, travel, and supply chain management. Throughout my career, I have successfully led cross-functional teams to create scalable applications from scratch and improve performance in large-scale production systems.<br><br></div><div><strong>AREAS OF EXPERTISE<br></strong><br></div><ul><li><strong>Web Development:</strong> Ruby on Rails, React, JavaScript, GraphQL</li><li><strong>Architecture Design:</strong> Designing and optimizing software architecture for scalability</li><li><strong>Database Management:</strong> PostgreSQL, MySQL, Elasticsearch</li><li><strong>Deployment &amp; CI/CD:</strong> Jenkins, GitHub Actions, Amazon Web Services, CI/CD pipelines</li><li><strong>API Development:</strong> RESTful APIs, GraphQL, third-party API integrations</li><li><strong>Testing &amp; QA:</strong> Cypress, RSpec, automated testing with high code coverage</li><li><strong>DevOps:</strong> Nginx, Puma, Sidekiq, AWS</li><li><strong>Client Support &amp; Team Leadership:</strong> Leading projects and mentoring junior developers</li></ul><div><strong>TECHNICAL TOOLS<br></strong><br></div><ul><li><strong>Version Control:</strong> GitHub, BitBucket</li><li><strong>Project Management:</strong> Jira, Trello, Zoho</li></ul><div><strong>WORK EXPERIENCE<br></strong><br></div><div><strong>BigBinary</strong> (April 2021 – 2022)<br><strong>Senior Software Engineer</strong><br><em>Tech Stack:</em> Ruby on Rails, React<br><br></div><ul><li>Worked on various client projects in sectors such as procurement, form building, and eSourcing.</li><li>Developed and optimized highly scalable applications with React and Rails.</li></ul><div><strong>Vineti</strong> (February 2022 – June 2022)<br><em>Via BigBinary</em><br><br><strong>Senior Software Engineer</strong><br><em>Tech Stack:</em> Ruby on Rails, ReactJS<br><br></div><ul><li>Developed features for SaaS-based products in cell and gene therapy.</li><li>Collaborated with teams to ensure seamless integration with cloud platforms.</li></ul><div><br><strong>neetoForm</strong> (November 2021 - February 2022)<br><em>Via BigBinary<br></em><br><strong>Senior Software Engineer</strong><br><em>Tech Stack:</em> Ruby on Rails, React<br><br></div><ul><li>Built customizable form applications for collecting data without requiring coding skills.</li></ul><div><br><strong>Bukukas</strong> (April 2021 – October 2021)<br><em>Via BigBinary</em><br><strong>Senior Software Engineer</strong><br><em>Tech Stack:</em> Ruby on Rails, ReactJS, GraphQL<br><br></div><ul><li>Developed digital bookkeeping solutions aimed at small businesses in Southeast Asia.</li></ul><div><br><strong>Market Dojo</strong> (May 2019 – March 2021)<br><em>Via Cyber Infrastructure Pvt Ltd.</em><br><strong>Senior Software Engineer</strong><br><em>Tech Stack:</em> Ruby on Rails, ReactJS, MySQL, Google Cloud<br><br></div><ul><li>Built an eSourcing software platform for procurement professionals.</li><li>Led the development and enhancement team, integrated GitHub Actions for CI/CD, and ensured code quality.</li></ul><div><br><strong>FlightsMachine</strong> (October 2018 – April 2019)<br><em>Via Nenosystem Consulting Services Pvt. Ltd.</em><br><strong>Technical Lead</strong><br><em>Tech Stack:</em> Sinatra, Vue, PostgreSQL, Heroku<br><br></div><ul><li>Built a scalable application for flight deals alerts with Twilio integration for user notifications.</li></ul><div><br><strong>BuyBaggage</strong> (August 2018 – September 2018)<br><em>Via Nenosystem Consulting Services Pvt. Ltd.</em><br><strong>Senior Software Engineer</strong><br><em>Tech Stack:</em> Sinatra, Vue, PostgreSQL, Heroku<br><br></div><ul><li>Developed a baggage management system, integrating Stripe for payments.</li></ul><div><br><strong>MyX Fitness</strong> (June 2017 – August 2018)<br><em>Via Nenosystem Consulting Services Pvt. Ltd.</em><br><strong>Senior Software Engineer</strong><br><em>Tech Stack:</em> Ruby on Rails, React, Android, PostgreSQL<br><br></div><ul><li>Developed fitness tech platform to stream live fitness classes, built REST APIs for Android and iOS apps.</li></ul><div><br><strong>EDUCATION<br></strong><br></div><div><strong>Sushila Devi Bansal College of Engineering</strong> (2011 – 2015)<br>Bachelor of Engineering in Electronics and Communication<br><br></div><div><strong>LINKS<br></strong><br></div><ul><li><strong>GitHub:</strong> <a href="#">github.com/arishkhan</a></li><li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arish-khan-784065104">linkedin.com/in/arish-khan</a></li></ul>'
+
+About.find_or_initialize_by(title: 'About Me') do |about|
+  puts 'Seeding AboutMe...'
+  about.description = '👋 Hi there! I am Arish, a Senior Fullstack Developer
+                        passionate about creating powerful
+                        web applications and enhancing user experiences.'
+  about.body = resume_html
+  about.save
+  puts 'About Me seeded successfully!'
+end
+
+puts 'Seeding Technologies...'
+TechnologySeeder.seed
+puts 'Technologies seeded successfully!'
+
+puts 'Seeding Projects...'
+ProjectSeeder.seed
+puts 'Projects seeded successfully!'
