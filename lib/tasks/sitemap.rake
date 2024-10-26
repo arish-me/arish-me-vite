@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-
 # lib/tasks/sitemap.rake
 namespace :sitemap do
   desc 'Generate sitemap.xml'
@@ -31,6 +30,15 @@ namespace :sitemap do
             xml.lastmod project.updated_at.strftime('%Y-%m-%d')
             xml.changefreq 'weekly'
             xml.priority '0.8'
+          end
+        end
+
+        Product.find_each do |product|
+          xml.url do
+            xml.loc product.website
+            xml.lastmod product.updated_at.strftime('%Y-%m-%d')
+            xml.changefreq 'daily'
+            xml.priority '0.5'
           end
         end
 
