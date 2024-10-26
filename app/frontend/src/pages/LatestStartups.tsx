@@ -18,58 +18,19 @@ const LatestStartups = () => {
   const description = 'Discover the latest trending startups, product launches, and innovations in October 2024, curated from Product Hunt. Stay updated with the most popular new tech!'
 
   useEffect(() => {
-    const fetchPosts = async () => {
+    const fetchProducts = async () => {
       try {
-        const response = await fetch('https://api.producthunt.com/v2/api/graphql', {
-          method: 'POST',
-          headers: {
-            Authorization: `Bearer ${process.env.PRODUCT_HUNT_API}`,
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            query: `{
-              posts {
-                totalCount
-                edges {
-                  node {
-                    commentsCount
-                    id
-                    name
-                    url
-                    description
-                    website
-                    featuredAt
-                    thumbnail {
-                      url
-                    }
-                    topics {
-                      edges {
-                        node {
-                          id
-                          name
-                          description
-                        }
-                      }
-                    }
-                    tagline
-                    votesCount
-                  }
-                }
-              }
-            }`
-          })
-        })
-
-        const { data } = await response.json()
-        setPosts(data.posts.edges.map(edge => edge.node))
+        const response = await fetch('/api/v1/products')
+        const data = await response.json()
+        setPosts(data)
       } catch (error) {
-        console.error("Error fetching posts:", error)
+        console.error("Error fetching products:", error)
       } finally {
         setLoading(false)
       }
     }
 
-    fetchPosts()
+    fetchProducts()
   }, [])
 
   return (
@@ -107,7 +68,7 @@ const LatestStartups = () => {
               <CardHeader className="p-4">
                 <div className="flex items-center gap-4 mb-2">
                   <Avatar className="h-10 w-10">
-                    <AvatarImage src={post.thumbnail.url} alt={post.name} />
+                    <AvatarImage src={post.thumbnail_url} alt={post.name} />
                     <AvatarFallback>{post.name.slice(0, 2).toUpperCase()}</AvatarFallback>
                   </Avatar>
                   <div className="flex-grow">
@@ -123,20 +84,20 @@ const LatestStartups = () => {
               </CardHeader>
               <CardContent className="p-4">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {post.topics.edges.slice(0, 3).map(({ node }) => (
-                    <Badge key={node.id} variant="secondary" className="text-xs">
-                      {node.name}
+                  {post.topics.map((node) => (
+                    <Badge key={node?.id} variant="secondary" className="text-xs">
+                      {node?.name}
                     </Badge>
                   ))}
                 </div>
                 <div className="flex justify-between items-center text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
                     <Eye className="h-4 w-4" />
-                    <span>{post.commentsCount}</span>
+                    <span>{post.comments_count}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Vote className="h-4 w-4 fill-current" />
-                    <span>{post.votesCount}</span>
+                    <span>{post.votes_count}</span>
                   </div>
                 </div>
               </CardContent>

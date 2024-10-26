@@ -95,7 +95,7 @@ class ProductHuntSyncService
   def sync_topic(product_data, product)
     # Sync topics
     product_data['topics']['edges'].each do |topic_data|
-      topic = product.topics.find_or_initialize_by(id: topic_data['node']['id'])
+      topic = product.topics.find_or_initialize_by(name: topic_data['node']['name'])
       topic.update!(
         name: topic_data['node']['name'],
         description: topic_data['node']['description']
