@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+require 'net/http'
 # app/services/project_seeder.rb
 class ProjectSeeder
   PROJECTS = [
