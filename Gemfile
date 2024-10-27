@@ -17,10 +17,10 @@ gem 'pg', '~> 1.1'
 gem 'puma', '>= 5.0'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
+gem 'daemons'
 gem 'jbuilder'
+gem 'sidekiq-cron'
 gem 'vite_rails'
-gem "daemons"
-gem "sidekiq-cron"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
@@ -60,4 +60,4 @@ group :test do
   gem 'selenium-webdriver'
 end
 
-gem "sidekiq", "~> 7.3"
+gem 'sidekiq', '~> 7.3'
