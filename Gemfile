@@ -20,12 +20,12 @@ gem 'puma', '>= 5.0'
 gem 'jbuilder'
 gem 'vite_rails'
 gem "daemons"
+gem "sidekiq-cron"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
-gem 'whenever', require: false
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 gem 'rails_admin', '~> 3.0'
@@ -34,7 +34,6 @@ gem 'devise'
 gem 'tzinfo-data', platforms: %i[windows jruby]
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
-gem 'delayed_job_active_record'
 gem 'friendly_id'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem 'dotenv'
@@ -60,3 +59,5 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
 end
+
+gem "sidekiq", "~> 7.3"

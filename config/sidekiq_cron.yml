@@ -1,0 +1,11 @@
+# config/sidekiq_cron.yml
+sync_products_job:
+  cron: "*/1 * * * *" # Run every 1 minutes
+  class: "SyncProductsJob"
+  # cron: 0 0,12 * * *
+sync_sitemap_job:
+  #cron: "*/2 * * * *" # Run every 2 minutes
+  cron: 0 0,13 * * *
+  class: "SyncSiteMapJob"
+
+

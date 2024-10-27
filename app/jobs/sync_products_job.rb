@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 # app/jobs/sync_products_job.rb
-class SyncProductsJob < ApplicationJob
-  queue_as :default
+class SyncProductsJob
+  include Sidekiq::Job
 
   def perform
     Rails.logger.info('Starting sync with Product Hunt')

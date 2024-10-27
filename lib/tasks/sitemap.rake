@@ -18,7 +18,14 @@ namespace :sitemap do
       xml.urlset xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9' do
         # List all static and dynamic URLs
         xml.url do
-          xml.loc 'www.arishdev.com/'
+          xml.loc 'https://www.arishdev.com'
+          xml.lastmod Time.now.strftime('%Y-%m-%d')
+          xml.changefreq 'houry'
+          xml.priority '1.0'
+        end
+
+        xml.url do
+          xml.loc 'https://www.arishdev.com/projects'
           xml.lastmod Time.now.strftime('%Y-%m-%d')
           xml.changefreq 'houry'
           xml.priority '1.0'
@@ -27,7 +34,7 @@ namespace :sitemap do
         # Example: Iterate over your dynamic resources
         Project.find_each do |project|
           xml.url do
-            xml.loc "/project/#{project.slug}"
+            xml.loc "https://www.arishdev.com/projects/#{project.slug}"
             xml.lastmod project.updated_at.strftime('%Y-%m-%d')
             xml.changefreq 'weekly'
             xml.priority '0.8'
@@ -44,14 +51,14 @@ namespace :sitemap do
         end
 
         xml.url do
-          xml.loc '/blogs'
+          xml.loc 'https://www.arishdev.com/blogs'
           xml.lastmod Time.now.utc
           xml.changefreq 'weekly'
           xml.priority '0.8'
         end
 
         xml.url do
-          xml.loc '/startups'
+          xml.loc 'https://www.arishdev.com/startups'
           xml.lastmod Time.now.utc
           xml.changefreq 'hourly'
           xml.priority '0.8'

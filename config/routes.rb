@@ -1,7 +1,10 @@
 # frozen_string_literal: true
-
+require 'sidekiq/web'
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin/arish-me', as: 'rails_admin'
+  authenticate :user, lambda { |u| u.admin? } do
+    mount Sidekiq::Web => '/sidekiq'
+  end
   devise_for :users, skip: %i[registrations passwords confirmations unlocks]
   get 'up' => 'rails/health#show', as: :rails_health_check
   # get '/rails/active_storage/blobs/:signed_id/*filename' => 'active_storage/blobs#show', as: 'rails_blob'
