@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 # app/jobs/sync_sitemap_job.rb.rb
-class SyncSiteMapJob < ApplicationJob
-  queue_as :default
+class SyncSiteMapJob
+  include Sidekiq::Job
 
   def perform
     Rails.logger.info('Starting sync with sitemap')
