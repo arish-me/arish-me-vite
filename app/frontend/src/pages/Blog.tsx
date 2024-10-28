@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { cn } from '@/lib/utils';
 import { Separator } from "@/components/ui/separator"
 import HelmetWrapper from '@/components/HelmetWrapper';
-
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 const Blog = () => {
   const title = 'Blog';
   const description = 'My personal website and blog where I share my thoughts on various topics including tutorials, notes, and personal experiences.';
@@ -61,8 +61,8 @@ const Blog = () => {
             <CardContent>
               <CardTitle className="text-md">{post.title}</CardTitle>
               <CardDescription>
-                {post.brief}
-                <Link to={post.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                <div>{ReactHtmlParser(post.brief.slice(0, 200))}</div>
+                <Link to={post.resource_type === 'custom' ? `/blogs/${post.slug}` : post.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
                   Read more
                 </Link>
               </CardDescription>
@@ -75,9 +75,12 @@ const Blog = () => {
                   </div>
                 ))}
               </div>
-              <Link to="/" className={cn(buttonVariants(), 'rounded-full border bg-black px-3 py-2 text-xs leading-4 dark:bg-zinc-900')}>
-                Follow
-              </Link>
+              {post.resource_type != 'custom' && (
+                <Link to="/" className={cn(buttonVariants(), 'rounded-full border bg-black px-3 py-2 text-xs leading-4 dark:bg-zinc-900')}>
+                  Follow
+                </Link>
+              )}
+
             </CardFooter>
           </Card>
         ))}

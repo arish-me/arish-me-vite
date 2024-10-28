@@ -18,6 +18,9 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :admin do
+    resources :blogs
+  end
   root 'pages#index'
 
   get '*path', to: 'pages#index', constraints: lambda { |req|

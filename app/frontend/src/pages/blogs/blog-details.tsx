@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import Header from './header'
 import { ProjectImage } from '@/components/blur-project-image'
 import { Separator } from "@/components/ui/separator"
+import { BlurImage } from '@/components/blur-image';
 
 import {
   Avatar,
@@ -20,22 +21,22 @@ import {
 } from "@/components/ui/card"
 import HelmetWrapper from '@/components/HelmetWrapper';
 
-const ProjectDetail = () => {
+const BlogDetail = () => {
   const { slug } = useParams(); // Get the slug from the URL params
-  const [project, setProject] = useState(null);
+  const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate(); // For handling "not found" case
 
   useEffect(() => {
     // Fetch the project data from the API based on the slug
-    const fetchProject = async () => {
+    const fetchBlog = async () => {
       try {
-        const response = await fetch(`/api/v1/projects/${slug}`);
+        const response = await fetch(`/api/v1/blogs/${slug}`);
         if (!response.ok) {
-          throw new Error("Project not found");
+          throw new Error("Blog not found");
         }
         const data = await response.json();
-        setProject(data);
+        setBlog(data);
       } catch (error) {
         console.error("Error fetching project:", error);
         navigate("/404"); // Navigate to a 404 page if the project is not found
@@ -44,18 +45,18 @@ const ProjectDetail = () => {
       }
     };
 
-    fetchProject();
+    fetchBlog();
   }, [slug, navigate]);
 
   if (loading) {
     return <div>Loading...</div>;
   }
 
-  if (!project) {
-    return <div>Project not found</div>;
+  if (!blog) {
+    return <div>Blog not found</div>;
   }
 
-  const { title, description, body, github_url, live_url, technologies } = project;
+  const { title, brief } = blog;
   return (
     <div className='mx-auto max-w-3xl'>
       <HelmetWrapper
@@ -64,45 +65,31 @@ const ProjectDetail = () => {
       />
       <Card>
         <CardHeader>
-          <Header {...project} />
-          <Separator className="mb-2" />
           <CardTitle>
-
-            {true && <ProjectImage
-              src={project.image_url.original}
-              width={1280}
-              height={832}
-              size="4xl"
-              imageClassName='group-hover:scale-105 my-6'
+          <div className="flex space-x-2">
+            <BlurImage
+              src={blog.profile_picture}
+              size="sm"
+              imageClassName="group-hover:scale-105"
               alt={title}
-              className='my-6 mb-6 rounded-lg'
+              className="rounded-lg"
             />
-            }
+
+            <div>
+              <CardTitle className="text-sm">{blog.author_name}</CardTitle>
+              <CardDescription>@{blog.author_username}</CardDescription>
+            </div>
+          </div>
           </CardTitle>
         </CardHeader>
         <Separator className="mb-2" />
         <CardContent>
-          <div className="mt-4" dangerouslySetInnerHTML={{ __html: body }} />
+          <div className="mt-4" dangerouslySetInnerHTML={{ __html: brief }} />
         </CardContent>
-        <CardFooter className="flex justify-between items-center">
-          <div className='flex flex-wrap gap-2'>
-            {technologies.map((t) => {
-              const { name } = t
-              return (
-                <div
-                  key={name}
-                  className='rounded-full border bg-zinc-50 px-3 py-2 text-xs leading-4 dark:bg-zinc-900'
-                >
-                  {name}
-                </div>
-              )
-            })}
-          </div>
-        </CardFooter>
       </Card>
 
     </div>
   );
 };
 
-export default ProjectDetail;
+export default BlogDetail;

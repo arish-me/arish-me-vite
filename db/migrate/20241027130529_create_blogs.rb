@@ -10,6 +10,8 @@ class CreateBlogs < ActiveRecord::Migration[7.1]
       t.string :author_username
       t.string :profile_picture
       t.text :tags, array: true, default: []
+      t.integer :resource_type, default: 0
+      t.string :slug
       t.timestamps
     end
   end

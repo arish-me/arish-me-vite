@@ -71,7 +71,8 @@ class BlogSyncService
           author_name: data['data']['publication']['author']['name'],
           author_username: data['data']['publication']['author']['username'],
           profile_picture: data['data']['publication']['author']['profilePicture'],
-          tags: post['node']['tags'].map { |tag| tag['name'] }
+          tags: post['node']['tags'].map { |tag| tag['name'] },
+          resource_type: 1
         }
       end
     else

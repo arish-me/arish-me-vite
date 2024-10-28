@@ -9,6 +9,11 @@ module Api
         @blogs = Blog.all.order(created_at: :desc)
         render json: @blogs
       end
+
+      def show
+        @blog = Blog.friendly.find(params[:id])
+        render json: @blog
+      end
     end
   end
 end

@@ -13,8 +13,8 @@
     "src": "../../node_modules/@rails/actioncable/src/index.js",
     "isDynamicEntry": true
   },
-  "__commonjsHelpers-Cpj98o6Y.js": {
-    "file": "assets/_commonjsHelpers-Cpj98o6Y.js",
+  "__commonjsHelpers-BosuxZz1.js": {
+    "file": "assets/_commonjsHelpers-BosuxZz1.js",
     "name": "_commonjsHelpers"
   },
   "entrypoints/application.css": {
@@ -24,27 +24,27 @@
     "isEntry": true
   },
   "entrypoints/application.tsx": {
-    "file": "assets/application-D27P6p9o.js",
+    "file": "assets/application-psHy8N9m.js",
     "name": "entrypoints/application.tsx",
     "src": "entrypoints/application.tsx",
     "isEntry": true,
     "imports": [
-      "__commonjsHelpers-Cpj98o6Y.js"
+      "__commonjsHelpers-BosuxZz1.js"
     ],
     "css": [
-      "assets/application-CJ-P_IQU.css"
+      "assets/application-D6fLYN_H.css"
     ],
     "assets": [
       "assets/arishme-CSkTL564.png"
     ]
   },
   "entrypoints/rails_admin.js": {
-    "file": "assets/rails_admin-BPIjQlzz.js",
+    "file": "assets/rails_admin-BpoNp9Am.js",
     "name": "entrypoints/rails_admin.js",
     "src": "entrypoints/rails_admin.js",
     "isEntry": true,
     "imports": [
-      "__commonjsHelpers-Cpj98o6Y.js"
+      "__commonjsHelpers-BosuxZz1.js"
     ],
     "dynamicImports": [
       "../../node_modules/@rails/actioncable/src/index.js"
@@ -56,6 +56,12 @@
       "assets/fa-solid-900-DOQJEhcS.woff2",
       "assets/fa-solid-900-BV3CbEM2.ttf"
     ]
+  },
+  "entrypoints/rails_admin_tinymce.js": {
+    "file": "assets/rails_admin_tinymce-l0sNRNKZ.js",
+    "name": "entrypoints/rails_admin_tinymce.js",
+    "src": "entrypoints/rails_admin_tinymce.js",
+    "isEntry": true
   },
   "src/images/arishme.png": {
     "file": "assets/arishme-CSkTL564.png",

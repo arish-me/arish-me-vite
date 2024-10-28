@@ -1,0 +1,39 @@
+<!-- app/views/admin/blogs/_form.html.erb -->
+<%= form_with(model: [:admin, @blog], local: true) do |f| %>
+  <div class="space-y-4">
+    <div>
+      <%= f.label :title, class: "block text-sm font-medium text-gray-700" %>
+      <%= f.text_field :title, class: "mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-black focus:border-black" %>
+    </div>
+
+    <div>
+      <%= f.label :url, class: "block text-sm font-medium text-gray-700" %>
+      <%= f.text_field :url, class: "mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-black focus:border-black" %>
+    </div>
+
+    <div>
+      <%= f.label :author_name, class: "block text-sm font-medium text-gray-700" %>
+      <%= f.text_field :author_name, class: "mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-black focus:border-black" %>
+    </div>
+
+    <div>
+      <%= f.label :author_username, class: "block text-sm font-medium text-gray-700" %>
+      <%= f.text_field :author_username, class: "mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-black focus:border-black" %>
+    </div>
+
+    <div>
+      <%= f.label :profile_picture, class: "block text-sm font-medium text-gray-700" %>
+      <%= f.text_field :profile_picture, class: "mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-black focus:border-black" %>
+    </div>
+
+      <div>
+      <%= f.label :brief, class: "block text-sm font-medium text-gray-700" %>
+      <%= f.text_area :brief, class: 'mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-black focus:border-black tinymce' %>
+      <%= tinymce %>
+    </div>
+
+    <div>
+      <%= f.submit 'Save', class: "mt-4 w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" %>
+    </div>
+  </div>
+<% end %>
