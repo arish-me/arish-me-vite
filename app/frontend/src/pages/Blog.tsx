@@ -49,6 +49,7 @@ const Blog = () => {
                   size="sm"
                   imageClassName="group-hover:scale-105"
                   alt={title}
+                  fallbackText={post.author_name}
                   className="rounded-lg"
                 />
                 <div>

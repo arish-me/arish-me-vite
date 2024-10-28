@@ -26,10 +26,14 @@
       <%= f.text_field :profile_picture, class: "mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-black focus:border-black" %>
     </div>
 
-      <div>
+    <div>
       <%= f.label :brief, class: "block text-sm font-medium text-gray-700" %>
       <%= f.text_area :brief, class: 'mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-black focus:border-black tinymce' %>
       <%= tinymce %>
+    </div>
+      <div>
+      <%= f.label :tags, "Choose Technologies", class: "block text-sm font-medium text-gray-700" %>
+      <%= f.select :tags, Technology.pluck(:name), { include_blank: false }, multiple: true, class: "mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-black focus:border-black" %>
     </div>
 
     <div>

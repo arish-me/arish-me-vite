@@ -51,6 +51,8 @@ class Admin::BlogsController < ApplicationController
   end
 
   def blog_params
-    params.require(:blog).permit(:title, :brief, :url, :author_name, :author_username, :profile_picture, :body, :tags => [])
+    params.require(:blog).permit(:title, :brief, :url, :author_name, :author_username, :profile_picture, :body, tags: []).tap do |blog_params|
+      blog_params[:tags].reject!(&:blank?) if blog_params[:tags]
+    end
   end
 end
