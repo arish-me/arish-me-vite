@@ -33,7 +33,7 @@ const GetInTouch = () => {
         ['#typescript', { opacity: 1 }, { duration: 0.3 }],
         ['#pointer', { left: 88, top: 198 }, { at: '+0.5', duration: 0.5, ease: 'easeInOut' }],
         ['#typescript', { opacity: 0.4 }, { at: '-0.3', duration: 0.1 }],
-        ['#next-js', { opacity: 1 }, { duration: 0.3 }],
+        ['#kubernets', { opacity: 1 }, { duration: 0.3 }],
         ['#pointer', { left: 200, top: 60 }, { at: '+0.5', duration: 0.5, ease: 'easeInOut' }],
         ['#next-js', { opacity: 0.4 }, { at: '-0.3', duration: 0.1 }]
       ],
@@ -83,11 +83,12 @@ const GetInTouch = () => {
               TypeScript
             </div>
             <div
-              id='javascript'
+              id='kubernets'
               className='absolute right-8 top-10 rounded-3xl border bg-gradient-to-b from-zinc-50 to-zinc-100 px-2 py-1.5 text-xs opacity-40 dark:from-zinc-800 dark:to-zinc-900'
             >
-              JavaScript
+              Kubernets
             </div>
+
 
             <div id='pointer' className='absolute'>
               <svg
@@ -118,10 +119,10 @@ const GetInTouch = () => {
             <p className='text-zinc-800 dark:text-zinc-300'>Feel free to reach out to me!</p>
             <div className='my-8'>
               <a
-                href='mailto:me@arish.me'
+                href='mailto:thermic.arish@gmail.com'
                 className='bg-destructive rounded-full px-4 py-2 text-sm text-white'
               >
-                arish@arish.me
+                thermic.arish@gmail.com
               </a>
             </div>
           </div>

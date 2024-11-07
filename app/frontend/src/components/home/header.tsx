@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, useAnimate } from 'framer-motion'
 import { BlurImage } from '@/components/blur-image'
-import Logo from '@/images/arishme.png';
+import Logo from '@/images/arishkhan.jpg';
 const TEXTS = [
   {
     text: 'amazing',

@@ -69,7 +69,7 @@ const ProjectDetail = () => {
           <CardTitle>
 
             {true && <ProjectImage
-              src={project.image_url.medium_2x}
+              src={project.image_url.original}
               width={1280}
               height={832}
               size="4xl"
