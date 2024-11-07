@@ -20,14 +20,14 @@ namespace :sitemap do
         xml.url do
           xml.loc 'https://www.arishdev.com'
           xml.lastmod Time.now.strftime('%Y-%m-%d')
-          xml.changefreq 'houry'
+          xml.changefreq 'hourly'
           xml.priority '1.0'
         end
 
         xml.url do
           xml.loc 'https://www.arishdev.com/projects'
           xml.lastmod Time.now.strftime('%Y-%m-%d')
-          xml.changefreq 'houry'
+          xml.changefreq 'hourly'
           xml.priority '1.0'
         end
 
@@ -41,25 +41,25 @@ namespace :sitemap do
           end
         end
 
-        Product.find_each do |product|
-          xml.url do
-            xml.loc product.website
-            xml.lastmod product.updated_at.strftime('%Y-%m-%d')
-            xml.changefreq 'daily'
-            xml.priority '0.5'
-          end
-        end
+        # Product.find_each do |product|
+        #   xml.url do
+        #     xml.loc product.website
+        #     xml.lastmod product.updated_at.strftime('%Y-%m-%d')
+        #     xml.changefreq 'daily'
+        #     xml.priority '0.5'
+        #   end
+        # end
 
         xml.url do
           xml.loc 'https://www.arishdev.com/blogs'
-          xml.lastmod Time.now.utc
+          xml.lastmod Time.now.strftime('%Y-%m-%d')
           xml.changefreq 'weekly'
           xml.priority '0.8'
         end
 
         xml.url do
           xml.loc 'https://www.arishdev.com/startups'
-          xml.lastmod Time.now.utc
+          xml.lastmod Time.now.strftime('%Y-%m-%d')
           xml.changefreq 'hourly'
           xml.priority '0.8'
         end
