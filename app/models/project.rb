@@ -7,6 +7,8 @@ class Project < ApplicationRecord
   friendly_id :title, use: :slugged
   has_rich_text :body
 
+  default_scope { order(:position) }
+
   has_many :project_technologies, dependent: :destroy
   has_many :technologies, through: :project_technologies
 

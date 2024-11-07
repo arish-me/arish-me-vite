@@ -8,6 +8,13 @@ RailsAdmin.config do |config|
   end
 
   config.current_user_method(&:current_user)
+
+  config.model 'Project' do
+    list do
+      sort_by :position
+      sort_reverse false  # `false` for ascending order, `true` for descending
+    end
+  end
   ### Popular gems integration
 
   ## == Devise ==

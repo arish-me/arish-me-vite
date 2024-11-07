@@ -31,7 +31,7 @@ const ProjectCard = (props: ProjectCardProps) => {
       className='shadow-feature-card dark:shadow-feature-card-dark hover:scale-105 bg-white group rounded-xl px-2 py-4'
     >
       <ProjectImage
-        src={image_url.original}
+        src={image_url?.original}
         width={600}
         height={400}
         size="auto"
