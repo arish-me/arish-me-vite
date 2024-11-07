@@ -27,6 +27,7 @@ const HelmetWrapper: React.FC<HelmetWrapperProps> = ({
   const image = `${process.env.APP_URL}/arishme.png`;
   return (
     <Helmet>
+      <meta charSet="UTF-8" />
       {showDefault ? (
         <title>{defaultTitle}</title>
       ) : (<title>{title} | {SITE_TITLE}</title>)}
