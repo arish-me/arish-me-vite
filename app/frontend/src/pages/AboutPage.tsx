@@ -1,7 +1,7 @@
 import PageTitle from '@/components/page-title'
 import { useEffect, useState } from "react";
 import HelmetWrapper from '@/components/HelmetWrapper';
-
+import { PDFViewer } from '@react-pdf/renderer';
 const AboutPage = () => {
   const [about, setAbout] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -38,6 +38,8 @@ const AboutPage = () => {
     return <div>About not found</div>;
   }
 
+  const pdfUrl = "/resume.pdf";
+
   return (
     <div className="container mx-auto py-8">
       <HelmetWrapper
@@ -45,10 +47,13 @@ const AboutPage = () => {
         url={window.location.href}
       />
       <PageTitle title={about.title} description={about.description} />
-
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-8 mt-8">
-        <div className="mt-2" dangerouslySetInnerHTML={{ __html: about.body }} />
-      </div>
+        <iframe
+          src={pdfUrl}
+          width="100%"
+          height="800px"
+          title="Resume"
+          style={{ border: 'none' }}
+        />
     </div>
   );
 };

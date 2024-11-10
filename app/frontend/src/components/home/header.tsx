@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import { motion, useAnimate } from 'framer-motion'
 import { BlurImage } from '@/components/blur-image'
 import Logo from '@/images/arishkhan.jpg';
+import { Button, buttonVariants } from "@/components/ui/button";
+import { cn } from '@/lib/utils';
+import { Download } from "lucide-react"
 const TEXTS = [
   {
     text: 'amazing',
@@ -44,6 +47,7 @@ const Header = () => {
       }
     )
   }, [animate, scope])
+   const resumeUrl = "/resume.pdf";
 
   return (
     <div className='my-16 space-y-6'>
@@ -75,7 +79,16 @@ const Header = () => {
             </div>{' '}
             apps using Rails and React.
           </h1>
+
           <div className='text-muted-foreground text-sm'>India • UTC/GMT +5:30</div>
+          <div className='flex gap-4 mt-4'>
+           <a href={resumeUrl} download="Arish_Resume.pdf">
+            <Button variant="secondary" className={cn(buttonVariants(), 'flex items-center gap-2 rounded-full border bg-black px-3 py-2 text-xs leading-4 dark:bg-zinc-900')}>
+              <Download className="h-5 w-5" />
+              Download Resume
+            </Button>
+            </a>
+          </div>
         </motion.div>
         <motion.div
           className='relative hidden size-56 md:block'
