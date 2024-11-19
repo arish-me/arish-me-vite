@@ -119,10 +119,10 @@ const GetInTouch = () => {
             <p className='text-zinc-800 dark:text-zinc-300'>Feel free to reach out to me!</p>
             <div className='my-8'>
               <a
-                href='mailto:thermic.arish@gmail.com'
+                href='mailto:hello@arishdev.com'
                 className='bg-destructive rounded-full px-4 py-2 text-sm text-white'
               >
-                thermic.arish@gmail.com
+                hello@arishdev.com
               </a>
             </div>
           </div>
