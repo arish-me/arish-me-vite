@@ -1,176 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>www.arishdev.com/</loc>
-    <lastmod>2024-10-27</lastmod>
-    <changefreq>houry</changefreq>
+    <loc>https://www.arishdev.com</loc>
+    <lastmod>2024-11-18</lastmod>
+    <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>/project/flightsmachine-flight-deal-notification-system</loc>
-    <lastmod>2024-10-26</lastmod>
+    <loc>https://www.arishdev.com/projects</loc>
+    <lastmod>2024-11-18</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.arishdev.com/projects/vineti-personalized-therapy-software</loc>
+    <lastmod>2024-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>/project/bukukas-digital-bookkeeping-app</loc>
-    <lastmod>2024-10-26</lastmod>
+    <loc>https://www.arishdev.com/projects/bukukas-digital-bookkeeping-app</loc>
+    <lastmod>2024-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>/project/vineti-personalized-therapy-software</loc>
-    <lastmod>2024-10-26</lastmod>
+    <loc>https://www.arishdev.com/projects/market-dojo-esourcing-software</loc>
+    <lastmod>2024-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>/project/market-dojo-esourcing-software</loc>
-    <lastmod>2024-10-26</lastmod>
+    <loc>https://www.arishdev.com/projects/manofix-handyman-service-job-marketplace</loc>
+    <lastmod>2024-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>/project/neetoform-custom-form-builder</loc>
-    <lastmod>2024-10-26</lastmod>
+    <loc>https://www.arishdev.com/projects/flightsmachine-flight-deal-notification-system</loc>
+    <lastmod>2024-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>/project/manofix-handyman-service-job-marketplace</loc>
-    <lastmod>2024-10-26</lastmod>
+    <loc>https://www.arishdev.com/projects/neetoform-custom-form-builder</loc>
+    <lastmod>2024-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.producthunt.com/r/UDRPB2J76CT53M?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/T755SFUYM2N32M?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/ZUQW3VOLY2F2MV?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/XBCJ3U6TRX3TIB?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/LOBXECATKAH6WH?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/S4LRKE5ER6WMHE?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/EFPMYWUXPGXZQQ?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/QFMN7UPFOEXI2T?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/UCNEALSQEUTKTS?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/3ZJ3W2RVKTVEPO?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/J32ZBA35QBHNO6?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/A26HU3FDDJLX6A?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/M7JCAKYCWRTE4A?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/5BRHZRHT7AFZZQ?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/DGVKJNNBJYD7LM?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/ADK7ELQKOQQMXM?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/CYGGIDGVPFU52Y?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/AVTFL7EPSJTYHS?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/64F72J3FH5ICZ6?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.producthunt.com/r/D5MOZJBQXSI73W?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Startup+Products+%28ID%3A+142376%29</loc>
-    <lastmod>2024-10-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>/blogs</loc>
-    <lastmod>2024-10-26 19:14:55 UTC</lastmod>
+    <loc>https://www.arishdev.com/blogs</loc>
+    <lastmod>2024-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>/startups</loc>
-    <lastmod>2024-10-26 19:14:55 UTC</lastmod>
+    <loc>https://www.arishdev.com/startups</loc>
+    <lastmod>2024-11-18</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.8</priority>
   </url>

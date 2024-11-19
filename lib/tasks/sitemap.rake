@@ -20,26 +20,18 @@ namespace :sitemap do
         xml.url do
           xml.loc 'https://www.arishdev.com'
           xml.lastmod Time.now.strftime('%Y-%m-%d')
-          xml.changefreq 'hourly'
+          xml.changefreq 'weekly'
           xml.priority '1.0'
         end
 
         xml.url do
           xml.loc 'https://www.arishdev.com/projects'
           xml.lastmod Time.now.strftime('%Y-%m-%d')
-          xml.changefreq 'hourly'
-          xml.priority '1.0'
+          xml.changefreq 'weekly'
+          xml.priority '0.9'
         end
 
         # Example: Iterate over your dynamic resources
-        Project.find_each do |project|
-          xml.url do
-            xml.loc "https://www.arishdev.com/projects/#{project.slug}"
-            xml.lastmod project.updated_at.strftime('%Y-%m-%d')
-            xml.changefreq 'weekly'
-            xml.priority '0.8'
-          end
-        end
 
         # Product.find_each do |product|
         #   xml.url do
@@ -60,8 +52,17 @@ namespace :sitemap do
         xml.url do
           xml.loc 'https://www.arishdev.com/startups'
           xml.lastmod Time.now.strftime('%Y-%m-%d')
-          xml.changefreq 'hourly'
-          xml.priority '0.8'
+          xml.changefreq 'weekly'
+          xml.priority '0.7'
+        end
+
+        Project.find_each do |project|
+          xml.url do
+            xml.loc "https://www.arishdev.com/projects/#{project.slug}"
+            xml.lastmod project.updated_at.strftime('%Y-%m-%d')
+            xml.changefreq 'weekly'
+            xml.priority '0.6'
+          end
         end
 
         # Add more URLs as needed
