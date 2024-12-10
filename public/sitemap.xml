@@ -2,62 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.arishdev.com</loc>
-    <lastmod>2024-11-18</lastmod>
-    <changefreq>hourly</changefreq>
+    <lastmod>2024-12-10</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.arishdev.com/projects</loc>
-    <lastmod>2024-11-18</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.arishdev.com/projects/vineti-personalized-therapy-software</loc>
-    <lastmod>2024-11-07</lastmod>
+    <lastmod>2024-12-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.arishdev.com/projects/bukukas-digital-bookkeeping-app</loc>
-    <lastmod>2024-11-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.arishdev.com/projects/market-dojo-esourcing-software</loc>
-    <lastmod>2024-11-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.arishdev.com/projects/manofix-handyman-service-job-marketplace</loc>
-    <lastmod>2024-11-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.arishdev.com/projects/flightsmachine-flight-deal-notification-system</loc>
-    <lastmod>2024-11-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.arishdev.com/projects/neetoform-custom-form-builder</loc>
-    <lastmod>2024-11-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.arishdev.com/blogs</loc>
-    <lastmod>2024-11-18</lastmod>
+    <lastmod>2024-12-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.arishdev.com/startups</loc>
-    <lastmod>2024-11-18</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2024-12-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.arishdev.com/projects/bukukas-leading-digital-bookkeeping-app-for-efficient-cash-flow-management-in-southeast-asia</loc>
+    <lastmod>2024-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.arishdev.com/projects/neetoform-innovative-no-code-custom-form-builder-for-seamless-data-collection</loc>
+    <lastmod>2024-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.arishdev.com/projects/manofix-premier-handyman-service-job-marketplace-connecting-you-with-local-freelancers</loc>
+    <lastmod>2024-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.arishdev.com/projects/market-dojo-cutting-edge-esourcing-and-procurement-software-for-efficient-supply-chain-management</loc>
+    <lastmod>2024-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.arishdev.com/projects/symplr-talent-sourcing-advanced-esourcing-for-healthcare-recruitment</loc>
+    <lastmod>2024-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.arishdev.com/projects/flightsmachine-real-time-flight-deal-notification-system-for-budget-travelers</loc>
+    <lastmod>2024-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.arishdev.com/projects/vineti-advanced-cloud-based-personalized-therapy-software-for-cell-therapy</loc>
+    <lastmod>2024-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
