@@ -6,4 +6,4 @@ sync_products_job:
 sync_sitemap_job:
   #cron: "*/2 * * * *" # Run every 2 minutes
   cron: 0 0,13 * * *
-  class: "SyncSiteMapJob"
+  class: "SyncSitemapJob"

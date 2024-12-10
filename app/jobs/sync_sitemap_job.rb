@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # app/jobs/sync_sitemap_job.rb.rb
-class SyncSitemapJob  
+class SyncSitemapJob
 include Sidekiq::Job
 
   def perform
