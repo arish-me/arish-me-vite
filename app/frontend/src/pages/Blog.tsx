@@ -112,7 +112,7 @@ const Blog = () => {
                   </div>
                 ))}
               </div>
-              <Link to={blogs.url} target="_blank" rel="noopener noreferrer" className={cn(buttonVariants(), 'rounded-full border bg-black px-3 py-2 text-xs leading-4 dark:bg-zinc-900')}>
+              <Link to={blogs.url} target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: 'outline' }), 'rounded-full border bg-black px-3 py-2 text-xs leading-4 dark:bg-zinc-900')}>
                 Follow
               </Link>
             </CardFooter>

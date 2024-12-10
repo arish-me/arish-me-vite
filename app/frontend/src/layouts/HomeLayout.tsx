@@ -9,7 +9,7 @@ const HomeLayout = () => {
   console.log(theme)
   // Define a mapping between themes and gradients
   const themeGradients: Record<string, string> = {
-    default: "bg-gradient-to-r from-rose-100 to-teal-100",
+    default: "bg-gradient-to-r from-gray-900 to-gray-700",
     dark: "bg-gradient-to-r from-gray-900 to-gray-700",
     light: "bg-gradient-to-r from-rose-100 to-teal-100",
   };

@@ -68,13 +68,13 @@ const AboutMe = () => {
           duration: 0.3
         }}
       >
-        <div className='grid gap-4 bg-white/50'>
+        <div className='grid gap-4 bg-white/50 dark:bg-black'>
           <LocationCard />
           <StacksCard />
         </div>
         <div className='grid gap-4'>
               <Connect />
-          <div className='grid gap-4 [@media(min-width:450px)]:grid-cols-2'>
+          <div className='grid gap-4 [@media(min-width:450px)]:grid-cols-2 dark:bg-black'>
              <CodingHours />
              <FavoriteFramework />
 

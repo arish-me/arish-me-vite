@@ -83,9 +83,9 @@ const Header = () => {
           <div className='text-muted-foreground text-sm'>India • UTC/GMT +5:30</div>
           <div className='flex gap-4 mt-4'>
            <a href={resumeUrl} download="Arish_Resume.pdf">
-            <Button variant="secondary" className={cn(buttonVariants(), 'flex items-center gap-2 rounded-full border bg-black px-3 py-2 text-xs leading-4 dark:bg-zinc-900')}>
+            <Button variant="primary" className={cn(buttonVariants({ variant: 'outline' }), 'rounded-xl')}>
               <Download className="h-5 w-5" />
-              Download Resume
+                <span className="px-2"> Download Resume</span>
             </Button>
             </a>
           </div>
