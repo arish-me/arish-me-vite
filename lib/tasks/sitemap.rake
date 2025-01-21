@@ -31,6 +31,13 @@ namespace :sitemap do
           xml.priority '0.9'
         end
 
+        xml.url do
+          xml.loc 'https://www.arishdev.com/videos'
+          xml.lastmod Time.now.strftime('%Y-%m-%d')
+          xml.changefreq 'weekly'
+          xml.priority '0.9'
+        end
+
         # Example: Iterate over your dynamic resources
 
         # Product.find_each do |product|
