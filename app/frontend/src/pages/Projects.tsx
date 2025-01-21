@@ -9,7 +9,7 @@ const Projects = () => {
   const [loading, setLoading] = useState(true);
   const [projects, setProjects] = useState([]);
 
-    useEffect(() => {
+  useEffect(() => {
     fetchProjects();
   }, []);
 
@@ -19,7 +19,6 @@ const Projects = () => {
         data: { projects },
       } = await projectsApi.fetch();
       setProjects(projects);
-
     } catch (error) {
       console.warn(error)
     } finally {

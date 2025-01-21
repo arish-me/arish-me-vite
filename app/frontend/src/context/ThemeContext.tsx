@@ -21,14 +21,17 @@ const defaultTheme = "light"; // Default theme to fall back on
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState(() => {
     const storedTheme = localStorage.getItem("theme");
-    return storedTheme || "system";
+    if(storedTheme == "system"){
+      return  "light";
+    }
+    return storedTheme || "light";
   });
 
   useEffect(() => {
     const root = window.document.documentElement;
-    root.classList.remove("light", "dark");
+    root.classList.remove("light", "dark",  "system");
 
-    if (theme === "system") {
+    if (theme === "light") {
       const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
       root.classList.add(systemTheme);
     } else {

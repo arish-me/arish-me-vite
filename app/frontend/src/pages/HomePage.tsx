@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Header from '@/components/home/header'
 import AboutMe from '@/components/home/about-me'
 import GetInTouch from '@/components/home/get-in-touch'

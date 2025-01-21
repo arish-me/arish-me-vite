@@ -43,10 +43,6 @@ export const ThemeToggle: React.FC = () => {
           <MoonIcon className="mr-2 w-4 h-4" />
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => handleThemeChange("system")}>
-          <MonitorIcon className="mr-2 w-4 h-4" />
-          System
-        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
