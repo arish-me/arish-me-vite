@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :projects
       resources :products
+      resources :videos
       resources :abouts
     end
   end
